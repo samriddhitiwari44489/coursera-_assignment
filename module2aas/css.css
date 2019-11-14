@@ -12,32 +12,70 @@ body {
 .column {
   box-sizing: border-box;
   float: left;
-  width: 32.33%;
+  width: 31.33%;
   background-color: #C0C0C0;
   border: 1px solid black;
   position: relative;
-  margin: 5px;
+  margin:5px;
+
 }
  h1{
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 60px;
+  margin-top:  60px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
+  font-size:75px; 
+
 
 }
 #p{
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: 30px;
   font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
 
 }
 #p1 {
-  width: 70px;
-  height: 25px;
+  width: 100px;
+  height: 44px;
   background-color: #A52A2A;
  border: 1px solid black;
+ font-size: 25px;
+ font-weight: bold;
  position: absolute;
  text-align: center;
  top: 0;
  right: 0;
+ color: white;
 }
+
+
+@media (max-width: 767px) {
+  .column {
+    float: none;
+    width: 100%;
+    margin:10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #div1{
+    float:left;
+    width: 48%;
+  }
+  #div2{
+    float:left;
+    width: 48%;
+  }
+  #div3{
+    width: 98%;
+    margin: 5px;
+  }
+}
+@media (min-width: 992px) {
+  .column {
+    float: left;
+    width: 32.33%;
+  }
+}
+
